@@ -1,14 +1,17 @@
 package com.example.pokemonapimvvmjetpackcompose.ui.theme
 
+import android.content.res.Resources.Theme
+import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.darkColors
 import androidx.compose.material.lightColors
-import androidx.compose.material3.Shapes
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.MovableContent
 import androidx.compose.ui.graphics.Color
 
-private val DarkColorPalette = darkColors(
+
+private val DarkColorPalate = darkColors(
     primary = Color.Yellow,
     background = Color(0xFF101010),
     onBackground = Color.White,
@@ -25,17 +28,22 @@ private val LightColorPalette = lightColors(
 )
 
 @Composable
-fun JetpackComposePokedexTheme(darkTheme: Boolean = isSystemInDarkTheme(), content: @Composable () -> Unit) {
-    val colors = if (darkTheme) {
-        DarkColorPalette
-    } else {
+fun JetpackComposePokedexTheme(darkTheme: Boolean = isSystemInDarkTheme(),content: @Composable () -> Unit){
+    val colors = if (darkTheme){
+        DarkColorPalate
+    }
+    else{
         LightColorPalette
     }
 
     MaterialTheme(
         colors = colors,
+        shapes = Shapes,
         content = content
     )
 
-
 }
+
+
+
+

@@ -11,9 +11,11 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.navigation.NavController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+import androidx.navigation.navArgument
 import com.example.pokemonapimvvmjetpackcompose.ui.theme.JetpackComposePokedexTheme
 
 class MainActivity : ComponentActivity() {
@@ -22,6 +24,7 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             JetpackComposePokedexTheme {
+                navigation()
 
             }
         }
@@ -31,11 +34,14 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun navigation(){
     val navController = rememberNavController()
+
+
     NavHost(navController = navController, startDestination =  "pokemon_list_screen"
     ) {
         composable("pokemon_list_screen"){
             //to do when adding the screen
         }
+
         
     }
 }
