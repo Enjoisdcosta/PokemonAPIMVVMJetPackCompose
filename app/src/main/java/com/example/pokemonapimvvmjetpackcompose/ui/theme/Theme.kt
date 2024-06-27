@@ -4,6 +4,7 @@ import android.content.res.Resources.Theme
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material.MaterialTheme
+import androidx.compose.material.Typography
 import androidx.compose.material.darkColors
 import androidx.compose.material.lightColors
 import androidx.compose.runtime.Composable
@@ -39,6 +40,7 @@ fun JetpackComposePokedexTheme(darkTheme: Boolean = isSystemInDarkTheme(),conten
     MaterialTheme(
         colors = colors,
         shapes = Shapes,
+        typography = Typography,
         content = content
     )
 

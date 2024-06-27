@@ -19,13 +19,13 @@ import androidx.navigation.navArgument
 import com.example.pokemonapimvvmjetpackcompose.ui.theme.JetpackComposePokedexTheme
 
 class MainActivity : ComponentActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
             JetpackComposePokedexTheme {
                 navigation()
-
             }
         }
     }
@@ -53,6 +53,7 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
         modifier = modifier
     )
 }
+
 
 @Preview(showBackground = true)
 @Composable
