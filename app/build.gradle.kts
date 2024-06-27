@@ -95,6 +95,9 @@ dependencies {
 //Async Image
     implementation ("io.coil-kt:coil-compose:2.2.2")
 
+//Palette Libary determine to show the dominant color of an image
+    implementation ("androidx.palette:palette:1.0.0")
+
 
 
 }
