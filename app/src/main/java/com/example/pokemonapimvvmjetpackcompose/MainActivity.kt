@@ -23,6 +23,7 @@ import com.example.pokemonapimvvmjetpackcompose.ui.nav.NavRoutes.Companion.DOMIN
 import com.example.pokemonapimvvmjetpackcompose.ui.nav.NavRoutes.Companion.POKEMON_DETAIL_SCREEN
 import com.example.pokemonapimvvmjetpackcompose.ui.nav.NavRoutes.Companion.POKEMON_LIST_SCREEN
 import com.example.pokemonapimvvmjetpackcompose.ui.nav.NavRoutes.Companion.POKEMON_NAME
+import com.example.pokemonapimvvmjetpackcompose.ui.pokemonList.PokemonListScreen
 import com.example.pokemonapimvvmjetpackcompose.ui.theme.JetpackComposePokedexTheme
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -48,10 +49,8 @@ fun navigation() {
         startDestination = POKEMON_LIST_SCREEN
     ) {
         composable(POKEMON_LIST_SCREEN) {
-
-
             //to do when adding the screen
-
+            PokemonListScreen(navController = navController)
         }
         composable(
             "pokemon_detail_screen/{dominantColor}/{pokemonName}",
