@@ -48,7 +48,10 @@ fun navigation() {
         startDestination = POKEMON_LIST_SCREEN
     ) {
         composable(POKEMON_LIST_SCREEN) {
+
+
             //to do when adding the screen
+
         }
         composable(
             "pokemon_detail_screen/{dominantColor}/{pokemonName}",
