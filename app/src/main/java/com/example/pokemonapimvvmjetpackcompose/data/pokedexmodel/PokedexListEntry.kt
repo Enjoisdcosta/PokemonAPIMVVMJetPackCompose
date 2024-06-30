@@ -1,6 +1,6 @@
 package com.example.pokemonapimvvmjetpackcompose.data.pokedexmodel
 
-data class PokeDexListEntry(
+data class PokedexListEntry(
     val pokemonName:String,
     val pokemonImage:String,
     val number: Int
